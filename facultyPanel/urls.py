@@ -18,11 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('userAuth.urls'), name='userAuth'),
-    # path('student/', include('studentPanel.urls')),
-    # path('management/', include('managementPanel.urls')),
-    # path('faculty/', include('facultyPanel.urls')),
-    # path('admin/', include('adminPanel.urls')),
-    # path('accountant/', include('acPanel.urls')),
-    # path('admin/', admin.site.urls)
+    path('login/', include('userAuth.urls')),
+    path('admin/', admin.site.urls)
 ]
