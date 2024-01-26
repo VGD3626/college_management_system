@@ -51,7 +51,8 @@
                     <h4 class="card-title mb-0">Login</h4>
                 </div>
                 <div class="card-body">
-                    <form id="loginForm" class="text-center" novalidate>
+                    <form action="studentDashboard" method="post" id="loginForm" class="text-center" novalidate>
+                        {% csrf_token %}
                         <div class="form-group">
                             <label for="id">ID:</label>
                             <input type="text" class="form-control" id="id" name="id" placeholder="Enter your ID" required>
