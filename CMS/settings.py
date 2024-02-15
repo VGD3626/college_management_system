@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'exp', 'acPanel', 'adminPanel', 'studentPanel', 'facultyPanel', 'managementPanel'
+    'exp', 'acPanel', 'adminPanel', 'studentPanel', 'facultyPanel', 'managementPanel', 'CMS',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +67,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'CMS.wsgi.application'
 
 # Database
@@ -74,12 +76,12 @@ WSGI_APPLICATION = 'CMS.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'cmsdb',
-        # 'USER': 'root',
-        # 'PASSWORD': '',
-        # 'HOST': 'localhost',
-        # 'PORT': '3306'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cms',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
