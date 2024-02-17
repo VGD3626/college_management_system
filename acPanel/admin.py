@@ -1,3 +1,4 @@
 from django.contrib import admin
+from acPanel.models import Accountant
 
-# Register your models here.
+admin.site.register(Accountant)

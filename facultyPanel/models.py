@@ -1,5 +1,5 @@
 from django.db import models
-from CMS.models import Person
+from userAuth.models import Person
 
 
 class Faculty(models.Model):

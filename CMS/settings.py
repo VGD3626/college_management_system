@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'exp', 'acPanel', 'adminPanel', 'studentPanel', 'facultyPanel', 'managementPanel', 'CMS',
+    'exp', 'acPanel', 'adminPanel', 'studentPanel', 'facultyPanel', 'managementPanel', 'CMS', 'userAuth'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +126,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/')
