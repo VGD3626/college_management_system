@@ -5,12 +5,10 @@
               <div class="col-lg-4">
                 <div class="card mb-4 shadow">
                   <div class="card-body text-center">
-                    <img
-                      src="../assets/default_profile.jpeg"
-                      alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
-                    <h5 class="my-3">{{ student.name }}</h5>
-                    <p class="text-muted mb-1">22CEUOS000</p>
-                    <p class="text-muted mb-4">Computer engineering</p>
+                    <img src="static/default_profile.jpeg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                    <h5 class="my-3">{{ user.first_name }} {{ user.last_name }}</h5>
+                    <p class="text-muted mb-1">{{user.username}}</p>
+                    <p class="text-muted mb-4">{{ user.program_name }}</p>
                   </div>
                 </div>
               </div>
@@ -22,7 +20,7 @@
                         <p class="mb-0">First Name</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">John</p>
+                        <p class="text-muted mb-0">{{ user.first_name }}</p>
                       </div>
                     </div>
                     <hr>
@@ -31,7 +29,7 @@
                         <p class="mb-0">Middle Name</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">Thomas</p>
+                        <p class="text-muted mb-0">{{ user.middle_name }}</p>
                       </div>
                     </div>
                     <hr>
@@ -40,7 +38,7 @@
                         <p class="mb-0">Last Name</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">Smith</p>
+                        <p class="text-muted mb-0">{{ user.last_name }}</p>
                       </div>
                     </div>
                     <hr>
@@ -49,7 +47,7 @@
                         <p class="mb-0">Email address</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">abc@example.com</p>
+                            <p class="text-muted mb-0">{{ user.email }}</p>
                       </div>
                     </div>
                     <hr>
@@ -58,8 +56,7 @@
                         <p class="mb-0">Phone</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">1234567890</p>
-                        <p class="text-muted mb-0">9876543210</p>
+                        <p class="text-muted mb-0">{{ user.phone_no }}</p>
                       </div>
                     </div>
                     <hr>
@@ -68,10 +65,10 @@
                         <p class="mb-0">Address</p>
                       </div>
                       <div class="col-sm-9">
-                        <p class="text-muted mb-0">house no, street name,</p>
-                        <p class="text-muted mb-0">area, landmark</p>
-                        <p class="text-muted mb-0">city, pincode</p>
-                        <p class="text-muted mb-0">state, country</p>
+                        <p class="text-muted mb-0">{{ user.house_no }}, {{ user.street_name }},</p>
+                        <p class="text-muted mb-0">{{ user.area_landmark }},</p>
+                        <p class="text-muted mb-0">{{ user.city }}, {{ user.pincode }}</p>
+                        <p class="text-muted mb-0">{{ user.state }}, {{ user.country }}</p>
                       </div>
                     </div>
                   </div>
@@ -81,25 +78,11 @@
                     <div class="card mb-4 mb-md-0 shadow">
                       <div class="card-body">
                         <p class="mb-4"><span class="text-primary me-1">Subjects</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
-                        <p class="mb-2" style="font-size: .90rem;">CourseId <span class="text-muted"> coursename</span>
-                        </p>
+                           {% for c in courses %}
+                            </p>
+                            <p class="mb-2" style="font-size: .90rem;">{{ c.subjectcode }} <span class="text-muted"> {{ c.subjectname }} </span>
+                            </p>
+                            {% endfor %}
                       </div>
                     </div>
                   </div>

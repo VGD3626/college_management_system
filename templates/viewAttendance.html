@@ -2,6 +2,27 @@
 
 {% block content %}
 
-    
+    {% for record in attendance_records %}
+        
+        <div class="card shadow border-0">
+        <div class="card-body">
+            <h5 class="card-title text-primary"></h5>
+            <div class="row">
+                <div class="group col-md-4">
+                    <p style="font-weight: bold;">Month: {{ record.upload_date }} </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="group col-md-4">
+                    <p>Total hours: {{ record.total_hours }}</p>
+                </div>
+                <div class="group col-md-4">
+                    <p>Present hours: {{ record.present_hours }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    {% endfor %}
     
 {% endblock %}
