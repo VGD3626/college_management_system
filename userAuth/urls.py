@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.user_authantication, name='login'),
-    path('/', include('studentPanel.urls'), name='studentPanel'),
-    path('/', include('facultyPanel.urls'), name='facultyPanel')
+    path('', include('studentPanel.urls'), name='studentPanel'),
+    path('', include('facultyPanel.urls'), name='facultyPanel')
 ]

@@ -1,5 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
+
+    {% for ht in hall_ticket %}
+
+        <form method="GET" action="{% url 'download_hallticket' %}">
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"></h5>
+                    <div class="row">
+                        <div class="group col-md-4">
+                            <label for="examType">Exam:</label>
+                            <input style="border:none" type="hidden" id="examId" name="examId"
+                                   value="{{ ht.exam.id }}"> sem-{{ ht.exam.semester }} {{ ht.exam.exam_type }} {{ ht.exam.start_date }} 
+                        </div>
+                        <div class="group col-md-6">
+                            <label for="studentID">Student ID:</label>
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="{{ user.username }}" readonly>
+                        </div>
+                        <div class="group col-md-2">
+                            <button type="submit" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        </form>
+
+
+    {% endfor %}
+
 {% endblock %}

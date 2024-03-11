@@ -2,4 +2,26 @@
 
 {% block content %}
     
+    {% for an in announcements %}
+        
+       <div class="card shadow border-0">
+        <div class="card-body">
+        <h5 class="card-title text-primary"></h5>
+        <div class="row">
+            <div class="group col-md-4">
+                <p style="font-weight: bold;">From: {{ an.sender }}</p>
+            </div>
+            <div class="group col-md-4">
+                <p>Date: {{ an.time }}</p>
+            </div>
+            <div class="group col-md-4">
+                <p>Title: {{ an.title }}</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: azure">
+        <div>{{ an.content }}</div>
+        
+    {%  endfor %}
+
 {% endblock %}
+

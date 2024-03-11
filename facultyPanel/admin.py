@@ -9,5 +9,6 @@ admin.site.register(ExamPaper)
 admin.site.register(Hallticket)
 admin.site.register(Mark)
 admin.site.register(AttendanceRecord)
+admin.site.register(Announcement)
 
 # Register your models here.
