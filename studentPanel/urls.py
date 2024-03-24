@@ -11,4 +11,6 @@ urlpatterns = [
     path('hall-ticket', views.display_gen_hallticket, name='display_gen_hallticket' ),
     path('notifications', views.display_notifications, name='display_notifications'),
     path('download', views.download_hallticket, name='download_hallticket'),
+    path('feeReceipt', views.display_gen_fee_receipt, name='display_gen_fee_receipt'),
+    path('downloadFeeReceipt', views.download_fee_receipt, name='download_fee_receipt')
 ]

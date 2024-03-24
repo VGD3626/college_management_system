@@ -1,138 +1,20 @@
 {% extends 'base.html' %}          
 
 {% block content %}
+        {% for a in stus %}
            <div class="container mt-4">
             <div class="row">
               <div class="col">
                 <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
+                  <span class="font-weight-bold">{{a.first_name}}</span>
+                  <span class="text-muted">Roll No: {{a.roll_no}}</span>
+                  <span class="text-muted">Student ID: {{a.username}}</span>
                   <span class="text-muted">Div.: A</span>
                   <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
+                  <span class="text-muted">Course: {{a.program_name}}</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">John Thomas Smith</span>
-                  <span class="text-muted">Roll No: 12345</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Div.: A</span>
-                  <span class="text-muted">Batch: A4</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        {% endfor %}     
 {% endblock %}

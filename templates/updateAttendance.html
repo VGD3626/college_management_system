@@ -3,7 +3,7 @@
 {% block content %}
 
     <div class="shadow container mt-4">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-between align-items-center p-3">
                     <span class="font-weight-bold">Student ID: 22CEUOS000</span>
@@ -14,23 +14,33 @@
                     <span class="text-muted">Course: Computer Engineering</span>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-between align-items-center p-3">
-                    <form action="#">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <label class="font-weight-bold">Student Id:
+                            <select name="student_id" id="">
+                                {%for a in stus%}
+                                <option value="{{a.username}}">{{a.username}}</option>
+                                {% endfor %}
+                              </select>
+                        </label>
+                        <br>
+                        <br>
                         <label class="font-weight-bold">Month and date:
-                            <input type="month" class="font-weight-bold">
+                            <input type="date" class="font-weight-bold" name="month" value="{{today}}">
                         </label>
                         <br>
                         <br>
                         <label class="font-weight-bold">Total Days:
-                            <input type="number" placeholder="Total Days">
+                            <input type="number" placeholder="Total Days" name="tday">
                         </label>
                         <br>
                         <label class="font-weight-bold">Present Days:
-                            <input type="number" placeholder="Present Days">
+                            <input type="number" placeholder="Present Days" name="pday">
                         </label>
                         <br>
                         <button type="submit" class="btn btn-primary">Submit</button>

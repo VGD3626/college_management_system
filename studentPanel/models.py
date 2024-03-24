@@ -1,5 +1,4 @@
 from django.db import models
-from userAuth.models import Person
 from django.contrib.auth.models import User
 from facultyPanel.models import Program
 

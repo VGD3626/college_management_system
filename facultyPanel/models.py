@@ -3,8 +3,6 @@ from django.contrib.auth.models import User
 from django.db.models import Q
 from django.utils.timezone import now
 
-from userAuth.models import Person
-
 
 class Faculty(models.Model):
     username = models.CharField(max_length=10, unique=True, null=True)
@@ -21,6 +19,8 @@ class Faculty(models.Model):
     designation = models.CharField(max_length=100)
 
     def save(self, *args, **kwargs):
+        # c = User.objects.all().count()
+        # print(c)
         self.username = f"F{self.date_of_birth.strftime("%Y")}{self.first_name}"
         password = self.date_of_birth.strftime("%Y-%m-%d")
         user = User.objects.create_user(username=self.username, password=password)

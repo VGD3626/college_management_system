@@ -4,120 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0002_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0002_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0003_faculty_username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0007_attendancerecord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0008_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0009_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_1_kB8RcBx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_2_6fc6ev4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_2_SJZfUHz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_5_k42OYhh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/Screenshot_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/casestudy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_pics/casestudy_mDnVfB5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentPanel/migrations/0002_student_username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studentPanel/migrations/0003_alter_student_username.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/college_management_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/college_management_system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="Implemented most of the functionalities of student panel.">
+      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0003_payment_verification_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0004_remove_accountant_person_remove_accountant_userid_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0005_payment_bank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0006_alter_payment_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0011_announcement_title_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0012_remove_announcement_receiver_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0013_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0014_alter_attendancerecord_upload_date_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0015_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0016_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0017_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0018_alter_attendancerecord_upload_date_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0019_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0020_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0021_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0022_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0002_remove_hod_person_remove_hod_userid_hod_first_name_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pics/activity_dgm1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_pics/algorithm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userAuth/migrations/0002_delete_person.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMS/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/migrations/0002_delete_person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMS/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMS/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMS/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMS/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMS/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/migrations/0002_accountant_userid.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/acPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminPanel/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/migrations/0002_alter_faculty_person.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/facultyPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facultyPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/migrations/0002_hod_userid.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/managementPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0002_remove_demo_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0003_delete_demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0004_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0005_student_userid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/migrations/0006_rename_qualification_student_degree_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/CEsyllabus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/CEsyllabus.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studentPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/addMarks.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addMarks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adminPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createAccount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/facultyHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facultyHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/generateFeeReciept.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generateFeeReciept.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/generatehallTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generatehallTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebars/facultySidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebars/facultySidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebars/studentSidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebars/studentSidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/studentDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/studentDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/facultyDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facultyDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/generateFeeReceipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generateFeeReceipt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/studentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/studentList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/updateAttendance.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/updateAttendance.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/verifyFeeStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/verifyFeeStatus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewAttendance.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewAttendance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewNotifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewNotifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewResults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewSyllabus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewSyllabus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userAuth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/migrations/0002_remove_person_aadhar_number_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/migrations/0003_remove_person_userid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/migrations/0004_person_profile_pic.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/userAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,24 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Django Server.college_management_system.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Vrund/PycharmProjects/college_management_system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.college_management_system.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vrund/PycharmProjects/college_management_system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="college_management_system" type="Python.DjangoServer" factoryName="Django server">
       <module name="college_management_system" />
@@ -209,8 +135,46 @@
       <workItem from="1709203585290" duration="29000" />
       <workItem from="1709266079622" duration="5143000" />
       <workItem from="1709280793010" duration="73000" />
-      <workItem from="1709284343008" duration="1652000" />
+      <workItem from="1709284343008" duration="1863000" />
+      <workItem from="1709309477178" duration="1316000" />
+      <workItem from="1709310838576" duration="11000" />
+      <workItem from="1709539283819" duration="6810000" />
+      <workItem from="1709784023730" duration="15000" />
+      <workItem from="1709884897605" duration="2119000" />
+      <workItem from="1709913559349" duration="730000" />
+      <workItem from="1709994631804" duration="460000" />
+      <workItem from="1709995882925" duration="114000" />
+      <workItem from="1710003882566" duration="9000" />
+      <workItem from="1710005063697" duration="631000" />
+      <workItem from="1710089137029" duration="721000" />
+      <workItem from="1710090490261" duration="141000" />
+      <workItem from="1710091398872" duration="6732000" />
+      <workItem from="1710098281085" duration="1098000" />
+      <workItem from="1710127257983" duration="182000" />
+      <workItem from="1710144073769" duration="6317000" />
+      <workItem from="1710234273945" duration="180000" />
+      <workItem from="1711257031506" duration="14000" />
+      <workItem from="1711257892368" duration="1102000" />
+      <workItem from="1711266748150" duration="53000" />
+      <workItem from="1711293770254" duration="6580000" />
     </task>
+    <task id="LOCAL-00001" summary="Partially completed user authentication, and started writing backend for 'studentPanel'">
+      <option name="closed" value="true" />
+      <created>1709286176883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709286176883</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented most of the functionalities of student panel.">
+      <option name="closed" value="true" />
+      <created>1710127411024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710127411024</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,5 +182,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Partially completed user authentication, and started writing backend for 'studentPanel'" />
+    <MESSAGE value="Implemented most of the functionalities of student panel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented most of the functionalities of student panel." />
   </component>
 </project>
