@@ -1,5 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
+
+    <div class="container">
+        <div class="row">
+
+            {% for exam in exams %}
+
+                <div class="col-md-4">
+                    <div class="card"
+                         style="border: none; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s; margin-bottom: 20px;">
+                        <div class="card-body" style="padding: 20px;">
+                            <h5 class="card-title" style="font-size: 20px; color: #333;">{{ exam.exam_type }}
+                                examination <br></h5>
+                            <h6 class="card-subtitle mb-2" style="font-size: 18px; color: #666; margin-top: 10px;">
+                                semester: {{ exam.semester.to_integral_value }} <br> start date: {{ exam.start_date }}
+                            </h6>
+                            <ul class="list-group">
+
+                                {% for m in marks %}
+
+                                    {% if m.exam.id == exam.id %}
+
+                                        <li class="list-group-item"
+                                            style="background-color: #f8f9fa; border: none; font-size: 16px; color: #333;"> {{ m.subject.subjectname }} :  {{ m.obtained_marks }} <span class="text-muted">out of </span> {{ exam.totalmarks.to_integral_value }} </li>
+
+                                    {% endif %}
+
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 {% endblock %}

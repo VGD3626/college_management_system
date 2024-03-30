@@ -35,7 +35,11 @@ def display_attendance(request):
 
 
 def display_result(request):
-    return render(request, 'viewResults.html', {'title': 'results', 'sidebar': 'sidebars/studentSidebar.html'})
+    user = Student.objects.get(username=request.user)
+    exams = Exam.objects.filter(program_name=user.program_name)
+    marks = Mark.objects.filter(student=user)
+    context = {'title': 'results', 'sidebar': 'sidebars/studentSidebar.html', 'exams': exams, 'marks': marks, 'user': user}
+    return render(request, 'viewResults.html', context)
 
 
 def display_syllabus(request):
@@ -117,7 +121,9 @@ def download_hallticket(request):
 
 
 def display_notifications(request):
-    user = Student.objects.get(username=request.user.username)
+    user = request.user
     announcements = Announcement.objects.filter(receiver=user.id)
     context = {'title': 'view notifications', 'sidebar': 'sidebars/studentSidebar.html', 'announcements': announcements}
     return render(request, 'viewNotifications.html', context)
+
+

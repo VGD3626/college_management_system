@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models import Q
+from django.db.models import Q, CheckConstraint
 from django.utils.timezone import now
 
 
@@ -48,12 +48,6 @@ class Exam(models.Model):
     passingmark = models.DecimalField(max_digits=10, decimal_places=2)
     semester = models.DecimalField(max_digits=10, decimal_places=2)
 
-
-class ExamPaper(models.Model):
-    exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
-    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE)
-
-
 class Subject(models.Model):
     subjectcode = models.CharField(max_length=20)
     subjectname = models.CharField(max_length=20)
@@ -72,7 +66,10 @@ class Mark(models.Model):
     student = models.ForeignKey('studentPanel.Student', on_delete=models.CASCADE)
     exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
     subject = models.OneToOneField(Subject, on_delete=models.CASCADE)
-
+    CheckConstraint(
+        check=Q(obtained_marks__isget=0) ,
+        name="obtained_marks_check",
+    )
 
 class Announcement(models.Model):
     sender = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sender')

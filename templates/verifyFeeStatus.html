@@ -1,41 +1,67 @@
 {% extends 'base.html' %}
 {% block content %}
-	
-           <div class="shadow container mt-4">
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center p-3">
-                  <span class="font-weight-bold text-primary">Student name:</span>
-                    <span class="text-muted">abc def</span>
-                  <span class="text-muted">Student ID: 22CEUOS000</span>
-                  <span class="text-muted">Course: Computer Engineering</span>
+
+    {% for t in transactions %}
+
+     <form method="POST" action="{% url 'verifyFees' %}">
+            {% csrf_token %}
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"></h5>
+                    <div class="row">
+                        <div class="group col-md-4">
+                            <label>Transaction Id:</label>
+                            <input style="border:none" name="transID"
+                                   value="{{ t.transID }}" readonly>
+                        </div>
+                        <div class="group col-md-8">
+                            <label>Transaction time:</label>
+                            <input style="border:none" type="text" name="time"
+                                   value="{{ t.time }}" readonly>
+                        </div>
+                         <div class="group col-md-12">
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="username: {{ t.student.username }}" readonly>
+                        </div>
+                         <div class="group col-md-12">
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="name: {{ t.student.first_name }} {{ t.student.last_name }}" readonly>
+                        </div>
+
+                         <div class="group col-md-12">
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="payment type: {{ t.payment_type }}" readonly>
+                        </div>
+                        <div class="group col-md-12">
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="cheque no.: {{ t.chequeNo }}" readonly>
+                        </div>
+                        <div class="group col-md-12">
+                            <input style="border:none" type="text" id="studentID" name="studentID"
+                                   value="bank: {{ t.bank }}" readonly>
+                        </div>
+                         <div class="group col-md-4">
+                            <label>Semester:</label>
+                            <input style="border:none" type="text" name="semester"
+                                   value="{{ t.semester }}" readonly>
+                        </div>
+                         <div class="group col-md-4">
+                            <label>amount:</label>
+                            <input style="border:none" type="text" name="amount"
+                                   value="{{ t.amount }} INR" readonly>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="group col-md-4">
+                            <button type="submit" class="btn btn-primary"  {% if t.verification_status == True %}disabled{% endif %}>Verify</button>
+                        {% if t.verification_status == False %}<span class="text-danger">not verified</span>
+                        {% else %}<span class="text-success">verified</span>{% endif %}
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-           <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                  <span class="font-weight-bold">Transaction Details:</span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                    <span>fdslfns
-                    fsdfslnf
-                    fsfnslnfl
-                    snfslnfl
-                    sfnnskfneskngfdbdngl fgownrpfnpawn rfdbvqearbgpqb</span>
-                </div>
-              </div>
-            </div>
-           <div class="row">
-              <div class="col">
-                <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                    <button type="submit" class="btn btn-primary">verify</button>
-                </div>
-              </div>
-            </div>
-          </div>
+            <br>
+        </form>
+    {% endfor %}
+
 {% endblock %}

@@ -13,6 +13,9 @@ def user_authantication(request):
             if username[0] == 'S':
                 login(request, user)
                 return redirect('display_studentdashboard')
+            elif username[0:2] == 'AC':
+                login(request, user)
+                return redirect('displayAcDashboard')
             else:
                 login(request, user)
                 return redirect('facultydashboard')

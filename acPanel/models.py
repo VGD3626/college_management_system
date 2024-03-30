@@ -5,10 +5,13 @@ from studentPanel.models import Student
 
 class Accountant(models.Model):
     username=models.CharField(max_length=50,unique=True,null=True)
+    profile_pic = models.ImageField(upload_to='profile_pics', default='default.jpg')
+    gender = models.CharField(max_length=10, blank=True)
+    email = models.EmailField(max_length=254, blank=True)
+    date_of_birth = models.DateField(blank=True, null=True)
     first_name = models.CharField(max_length=50, null=True)
     middle_name = models.CharField(max_length=50, blank=True)
     last_name = models.CharField(max_length=50, null=True)
-    date_of_birth = models.DateField(blank=True, null=True)
     qualification = models.CharField(max_length=100)
     joining_date = models.DateField()
 
