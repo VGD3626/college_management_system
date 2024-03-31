@@ -27,7 +27,7 @@
   </div>
 </div>
 
-{% if exam.examid and exam.totalmarks and exam.start_date %}
+{% if exam.id and exam.totalmarks and exam.start_date %}
 <div class="card mt-lg-5 shadow border-0">
   <div class="card-body">
     <h5 class="card-title text-primary">Insert subject-wise marks</h5>
@@ -39,7 +39,7 @@
         {% for i in sub %}
               <div class="form-row col-md-2">
                 <span>Subject:-{{ i.subjectname }}</span>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="marks obtained" name="marks">
+                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="marks obtained" name="marks">
               </div>
         {% endfor %}
         <br>
@@ -80,4 +80,4 @@
 </div>
 {% endif %}
 
-{% endblock %} addmarks.html
+{% endblock %}

@@ -10,5 +10,6 @@ urlpatterns = [
     path('studentlist', views.studentlist,name='studentlist'),
     path('addmarks2', views.addmarks2,name='addmarks2'),
     path('makeAnnouncement', views.makeAnnouncement,name='makeAnnouncement'),
+    path('submitAnnouncement', views.submitAnnouncement, name='submitAnnouncement'),
     path('logout', views.logout_user, name='logout')
 ]

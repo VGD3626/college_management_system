@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="Completed the implementation of student panel and accountant panel.">
-      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0008_alter_accountant_profile_pic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0025_faculty_department_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0026_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/default_profile.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/makeAnnouncment.html" afterDir="false" />
+    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="commit on 31-03-2024 10:10 PM">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2024_10_16_pm_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-03-2024_10_16_pm__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facultyPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facultyPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/acDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/acDashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adminPanel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebars/facultySidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebars/facultySidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/addMarks.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addMarks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/makeAnnouncment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/makeAnnouncment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/studentDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/studentDashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewNotifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewNotifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,6 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -160,6 +149,7 @@
       <workItem from="1711452309409" duration="93000" />
       <workItem from="1711813799875" duration="10939000" />
       <workItem from="1711896774681" duration="6375000" />
+      <workItem from="1711903822965" duration="2661000" />
     </task>
     <task id="LOCAL-00001" summary="Partially completed user authentication, and started writing backend for 'studentPanel'">
       <option name="closed" value="true" />

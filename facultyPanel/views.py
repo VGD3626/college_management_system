@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.utils.timezone import now
-from .models import Faculty, AttendanceRecord, Exam, Subject, Program, Announcement
+from .models import Faculty, AttendanceRecord, Exam, Subject, Program, Announcement, Mark
 from studentPanel.models import Student
 from django.utils import timezone
 
@@ -84,31 +84,72 @@ def addmarks(request):
                   {'title': 'addmarks', 'sidebar': 'sidebars/facultySidebar.html', 'stus': stus})
 
 
-def addmarks2(request):
-    stus = Student.objects.all()
-    if request.method == "POST":
-        marks = request.POST.get("marks")
-        # for i,j in zip(marks,sub_examin):
-
-        # print(i)
-        # print(j)
-        # mark=Mark(obtainmarks=i,student=student_examin,exam=examtype,subject=j)
-        # print(mark)
-        # mark.save()
-    return redirect('addmarks')
-    # return render(request, 'addMarks.html', {'title':'addmarks', 'sidebar':'sidebars/facultySidebar.html','stus':stus})
-
 
 def makeAnnouncement(request):
+    return render(request, 'makeAnnouncment.html', {'title': 'make announcement', 'sidebar': 'sidebars/facultySidebar.html'})
+
+def submitAnnouncement(request):
     user = request.user
     announcement = Announcement(content=request.POST.get("content"), sender=user, time=now(),
                                 title=request.POST.get("title"))
     announcement.save()
     for s in Student.objects.all():
         announcement.receiver.add(User.objects.get(username=s.username))
-    return render(request, 'makeAnnouncment.html', {'title': 'addmarks', 'sidebar': 'sidebars/facultySidebar.html'})
-
+    return render(request, 'makeAnnouncment.html', {'title': 'make announcement', 'sidebar': 'sidebars/facultySidebar'
+                                                                                             '.html'})
 
 def logout_user(request):
     logout(request)
     return redirect('login')
+
+
+def addmarks(request):
+    global examtype
+    global student_examin
+    global sub_examin
+    stus=Student.objects.all()
+
+    if request.method == "POST":
+        sid=request.POST.get('student_id')
+        stus1=Student.objects.get(username=sid)
+        student_examin=stus1
+        eid=request.POST.get('exam_id')
+        exam=Exam.objects.get(id=eid)
+        examtype=exam
+        print(stus1.username)
+
+        # print(request.POST)
+        if 'marks' in request.POST:
+            print("success")
+        else:
+            # sid=request.POST.get('student_id')
+            # stus1=Student.objects.get(username=sid)
+            program_name=stus1.program_name
+            program=Program.objects.get(program_name=program_name)
+            sub=Subject.objects.filter(program=program)
+            sub_examin=sub
+            for x in sub:
+                print(x.subjectname)
+            # eid=request.POST.get('exam_id')
+            # exam=Exam.objects.get(examid=eid)
+            print(eid)
+            print(exam.start_date)
+            return render(request, 'addMarks.html', {'title':'addmarks', 'sidebar':'sidebars/facultySidebar.html','stus':stus,'exam':exam,"sub":sub})
+    return render(request, 'addMarks.html', {'title':'addmarks', 'sidebar':'sidebars/facultySidebar.html','stus':stus})
+
+def addmarks2(request):
+    stus=Student.objects.all()
+    if request.method == "POST":
+        marks=request.POST.getlist("marks")
+        print(examtype)
+        print(student_examin)
+        for i,j in zip(marks,sub_examin):
+            if i and j and examtype and student_examin:
+                print("yes")
+            print(i)
+            print(j.subjectname)
+            markobject=Mark(obtained_marks=i,student=student_examin,exam=examtype,subject=j)
+            markobject.save()
+            print(markobject)
+    return redirect('addmarks')
+    # return render(request, 'addMarks.html', {'title':'addmarks', 'sidebar':'sidebars/facultySidebar.html','stus':stus})

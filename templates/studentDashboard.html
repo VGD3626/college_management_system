@@ -1,104 +1,106 @@
 {% extends 'base.html' %}
 {% block content %}
-          <div class="container py-5 p-sm-0">
-            <div class="row mt-2">
-              <div class="col-lg-4">
+    <div class="container py-5 p-sm-0">
+        <div class="row mt-2">
+            <div class="col-lg-4">
                 <div class="card mb-4 shadow">
-                  <div class="card-body text-center">
-                    <img src="{{ user.profile_pic.url }}" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
-                    <h5 class="my-3">{{ user.first_name }} {{ user.last_name }}</h5>
-                    <p class="text-muted mb-1">{{user.username}}</p>
-                    <p class="text-muted mb-4">{{ user.program_name }}</p>
-                  </div>
+                    <div class="card-body text-center">
+                        <img src="{{ user.profile_pic.url }}" alt="avatar" class="rounded-circle img-fluid"
+                             style="width: 150px;">
+                        <h5 class="my-3">{{ user.first_name }} {{ user.last_name }}</h5>
+                        <p class="text-muted mb-1">{{ user.username }}</p>
+                        <p class="text-muted mb-4">{{ user.program_name }}</p>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-8">
+            </div>
+            <div class="col-lg-8">
                 <div class="card mb-4 shadow">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">First Name</p>
-                      </div>
-                      <div class="col-sm-9">
-                        <p class="text-muted mb-0">{{ user.first_name }}</p>
-                      </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">First Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.first_name }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Middle Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.middle_name }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Last Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.last_name }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email address</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.email }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.phone_no }}</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Address</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ user.house_no }}, {{ user.street_name }},</p>
+                                <p class="text-muted mb-0">{{ user.area_landmark }},</p>
+                                <p class="text-muted mb-0">{{ user.city }}, {{ user.pincode }}</p>
+                                <p class="text-muted mb-0">{{ user.state }}, {{ user.country }}</p>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">Middle Name</p>
-                      </div>
-                      <div class="col-sm-9">
-                        <p class="text-muted mb-0">{{ user.middle_name }}</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">Last Name</p>
-                      </div>
-                      <div class="col-sm-9">
-                        <p class="text-muted mb-0">{{ user.last_name }}</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">Email address</p>
-                      </div>
-                      <div class="col-sm-9">
-                            <p class="text-muted mb-0">{{ user.email }}</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">Phone</p>
-                      </div>
-                      <div class="col-sm-9">
-                        <p class="text-muted mb-0">{{ user.phone_no }}</p>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <p class="mb-0">Address</p>
-                      </div>
-                      <div class="col-sm-9">
-                        <p class="text-muted mb-0">{{ user.house_no }}, {{ user.street_name }},</p>
-                        <p class="text-muted mb-0">{{ user.area_landmark }},</p>
-                        <p class="text-muted mb-0">{{ user.city }}, {{ user.pincode }}</p>
-                        <p class="text-muted mb-0">{{ user.state }}, {{ user.country }}</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="card mb-4 mb-md-0 shadow">
-                      <div class="card-body">
-                        <p class="mb-4"><span class="text-primary me-1">Subjects</span>
-                           {% for c in courses %}
-                            </p>
-                            <p class="mb-2" style="font-size: .90rem;">{{ c.subjectcode }} <span class="text-muted"> {{ c.subjectname }} </span>
-                            </p>
-                            {% endfor %}
-                      </div>
+                    <div class="col-md-8">
+                        <div class="card mb-4 mb-md-0 shadow">
+                            <div class="card-body">
+                                <table class="table table-borderless">
+                                    <thead class="text-primary">
+                                    <tr>
+                                        <th scope="col">Subject Code</th>
+                                        <th scope="col">Subject Name</th>
+                                        <th scope="col">Reference Book</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for c in courses %}
+                                        <tr>
+                                            <td>{{ c.subjectcode }}</td>
+                                            <td>{{ c.subjectname }}</td>
+                                            <td>{{ c.reference_book }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card mb-4 mb-md-0 shadow">
-                      <div class="card-body">
-                        <p class="mb-4 text-primary ">SPI</p>
-                        <p class="mb-2" style="font-size: .90rem;">sem:1 <span class="text-muted"> 10</span></p>
-                        <p class="mb-2" style="font-size: .90rem;">sem:2 <span class="text-muted"> 10</span></p>
-                        <p class="mb-2" style="font-size: .90rem;">sem:3 <span class="text-muted"> 10</span></p>
-                        <p class="mb-2" style="font-size: .90rem;">sem:4 <span class="text-muted"> 10</span></p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
             </div>
-          </div>
-{% endblock %}
+        </div>
+    </div>{% endblock %}
