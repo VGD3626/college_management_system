@@ -3,7 +3,7 @@ from time import strftime
 
 from django.contrib.auth import logout
 from django.http import FileResponse, HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from reportlab.pdfgen import canvas
 from acPanel.models import Payment
 from facultyPanel.models import *
@@ -123,7 +123,18 @@ def download_hallticket(request):
 def display_notifications(request):
     user = request.user
     announcements = Announcement.objects.filter(receiver=user.id)
-    context = {'title': 'view notifications', 'sidebar': 'sidebars/studentSidebar.html', 'announcements': announcements}
+    if(user.username[0] == 'S'):
+        s='sidebars/studentSidebar.html'
+    elif(user.username[0:2] == 'AC'):
+        s='sidebars/accountantSidebar.html'
+    elif(user.username[0] == 'F'):
+        s='sidebars/facultySidebar.html'
+    else:
+        s='sidebars/dirSidebar.html'
+    context = {'title': 'view notifications', 'sidebar': s, 'announcements': announcements}
     return render(request, 'viewNotifications.html', context)
 
 
+def logout_user(request):
+    logout(request)
+    return redirect('login')

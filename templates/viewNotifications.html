@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
+
     {% for an in announcements %}
-        
-       <div class="card shadow border-0">
+
+        <div class="card shadow border-0">
         <div class="card-body">
         <h5 class="card-title text-primary"></h5>
         <div class="row">
@@ -20,8 +20,11 @@
         </div>
         <div class="row" style="background-color: azure">
         <div>{{ an.content }}</div>
-        
-    {%  endfor %}
+        </div>
+        </div>
+        </div>
+        <hr>
+    {% endfor %}
 
 {% endblock %}
 

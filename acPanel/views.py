@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.contrib.auth import logout
+from django.shortcuts import render, redirect
 from acPanel.models import Accountant, Payment
 from facultyPanel.models import Announcement
 from studentPanel.models import Student
@@ -22,9 +23,6 @@ def verifyFees(request):
     return render(request, 'verifyFeeStatus.html',
                   {'title': 'fees verification', 'sidebar': 'sidebars/accountantSidebar.html', 'transactions': transactions})
 
-
-# def display_notifications(request):
-#     user = Accountant.objects.get(username=request.user.username)
-#     announcements = Announcement.objects.filter(receiver=user.id)
-#     context = {'title': 'view notifications', 'sidebar': 'sidebars/accountantSidebar.html', 'announcements': announcements}
-#     return render(request, 'viewNotifications.html', context)
+def logout_user(request):
+    logout(request)
+    return redirect('login')

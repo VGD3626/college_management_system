@@ -5,7 +5,7 @@ from studentPanel.models import Student
 
 class Accountant(models.Model):
     username=models.CharField(max_length=50,unique=True,null=True)
-    profile_pic = models.ImageField(upload_to='profile_pics', default='default.jpg')
+    profile_pic = models.ImageField(upload_to='profile_pics', default='default_profile.jpeg')
     gender = models.CharField(max_length=10, blank=True)
     email = models.EmailField(max_length=254, blank=True)
     date_of_birth = models.DateField(blank=True, null=True)

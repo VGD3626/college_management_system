@@ -10,6 +10,7 @@ class Faculty(models.Model):
     first_name = models.CharField(max_length=50, null=True)
     middle_name = models.CharField(max_length=50, blank=True)
     last_name = models.CharField(max_length=50, null=True)
+    department = models.CharField(max_length=20,null=False)
     gender = models.CharField(max_length=10, blank=True)
     email = models.EmailField(max_length=254, blank=True)
     date_of_birth = models.DateField(blank=True, null=True)
