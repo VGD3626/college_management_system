@@ -7,43 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="commit on 31-03-2024 11:19 PM">
-      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0009_alter_payment_chequeno.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acPanel/migrations/0010_alter_payment_chequeno.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0027_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0028_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0029_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0030_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0031_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0032_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0033_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0034_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0035_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0036_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0037_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0038_alter_attendancerecord_upload_date_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0039_alter_attendancerecord_upload_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0040_alter_attendancerecord_upload_date_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0003_delete_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0004_hod_date_of_birth_hod_last_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0005_remove_hod_date_of_birth_remove_hod_last_name_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0006_delete_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/addClubs.html" afterDir="false" />
+    <list default="true" id="e26e4236-80f8-4c15-bdba-f93910181919" name="Changes" comment="implemented remaining functionalities of management panel, accountant Panel and facultyPanel">
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0041_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facultyPanel/migrations/0042_alter_attendancerecord_upload_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0007_hod_last_name_hod_profile_pic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managementPanel/migrations/0008_hod_date_of_birth_hod_email_hod_gender_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facultyPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/facultyPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/managementPanel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managementPanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/managementPanel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentPanel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/studentPanel/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/addRules.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/directorDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directorDashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebars/dirSidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebars/dirSidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/viewResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/viewResults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userAuth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userAuth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/facultyDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facultyDashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +153,9 @@
       <workItem from="1711813799875" duration="10939000" />
       <workItem from="1711896774681" duration="6375000" />
       <workItem from="1711903822965" duration="2959000" />
-      <workItem from="1711942300424" duration="6827000" />
+      <workItem from="1711942300424" duration="7091000" />
+      <workItem from="1711954119901" duration="235000" />
+      <workItem from="1711958330933" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="Partially completed user authentication, and started writing backend for 'studentPanel'">
       <option name="closed" value="true" />
@@ -223,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711906782258</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented remaining functionalities of management panel, accountant Panel and facultyPanel">
+      <option name="closed" value="true" />
+      <created>1711950507316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711950507316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +218,7 @@
     <MESSAGE value="Implemented &quot;download fee receipt&quot; functionality for student panel." />
     <MESSAGE value="Completed the implementation of student panel and accountant panel." />
     <MESSAGE value="commit on 31-03-2024 11:19 PM" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit on 31-03-2024 11:19 PM" />
+    <MESSAGE value="implemented remaining functionalities of management panel, accountant Panel and facultyPanel" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented remaining functionalities of management panel, accountant Panel and facultyPanel" />
   </component>
 </project>
