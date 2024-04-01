@@ -64,9 +64,9 @@ class Hallticket(models.Model):
 
 class Mark(models.Model):
     obtained_marks = models.IntegerField()
-    student = models.ForeignKey('studentPanel.Student', on_delete=models.CASCADE)
-    exam = models.ForeignKey(Exam, on_delete=models.CASCADE)
-    subject = models.OneToOneField(Subject, on_delete=models.CASCADE)
+    student = models.ForeignKey('studentPanel.Student', on_delete=models.CASCADE, unique=False)
+    exam = models.ForeignKey(Exam, on_delete=models.CASCADE, unique=False)
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE, unique=False)
     CheckConstraint(
         check=Q(obtained_marks__isget=0) ,
         name="obtained_marks_check",

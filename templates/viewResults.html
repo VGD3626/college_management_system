@@ -23,7 +23,7 @@
                                     {% if m.exam.id == exam.id %}
 
                                         <li class="list-group-item"
-                                            style="background-color: #f8f9fa; border: none; font-size: 16px; color: #333;"> {{ m.subject.subjectname }} :  {{ m.obtained_marks }} <span class="text-muted">out of </span> {{ exam.totalmarks.to_integral_value }} </li>
+                                            style="background-color: #f8f9fa; border: none; font-size: 16px; color: #333;"> {{ m.subject.subjectname }}:  {{ m.obtained_marks }} <span class="text-muted">out of </span> {{ exam.totalmarks.to_integral_value }} </li>
 
                                     {% endif %}
 
@@ -42,5 +42,5 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+    </div>
 {% endblock %}

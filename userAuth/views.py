@@ -16,7 +16,10 @@ def user_authantication(request):
             elif username[0:2] == 'AC':
                 login(request, user)
                 return redirect('displayAcDashboard')
-            else:
+            elif(username[0] == 'F'):
                 login(request, user)
                 return redirect('facultydashboard')
+            elif(username[0] == 'M'):
+                login(request, user)
+                return redirect('directordashboard')
     return render(request, 'login.html')

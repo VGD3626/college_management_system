@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5 class="card-title">Add Club</h5>
+        </div>
+        <div class="card-body">
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="clubid">Club Id:</label>
+                    <input type="number" class="form-control" name="clubid" required>
+                </div>
+                <div class="form-group">
+                    <label for="clubname">Club Name:</label>
+                    <input type="text" class="form-control" name="clubname" required>
+                </div>
+                <div class="form-group">
+                    <label for="hod">HOD:</label>
+                    <select class="form-control" name="hod" required>
+                        {% for hod in hods %}
+                        <option>{{ hod.first_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="student">Students:</label>
+                    <select multiple class="form-control"  name="student" required>
+                        {% for student in students %}
+                        <option>{{ student.first_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="faculty">Faculty:</label>
+                    <select multiple class="form-control"  name="faculty" required>
+                        {% for f in faculty %}
+                        <option>{{ f.first_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estdate">Establishment Date:</label>
+                    <input type="date" class="form-control"  name="estdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type:</label>
+                    <input type="text" class="form-control" name="type" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Club</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

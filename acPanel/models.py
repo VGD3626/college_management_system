@@ -28,7 +28,7 @@ class Payment(models.Model):
     student=models.ForeignKey(Student,on_delete=models.CASCADE)
     amount=models.IntegerField()
     payment_type = models.CharField(max_length=100)
-    chequeNo=models.IntegerField()
+    chequeNo=models.IntegerField(null=True)
     time=models.DateTimeField()
     bank=models.CharField(max_length=40)
     semester=models.IntegerField()

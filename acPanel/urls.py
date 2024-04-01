@@ -8,5 +8,4 @@ urlpatterns = [
     path('verifyFees', views.verifyFees, name='verifyFees'),
     path('admin/', admin.site.urls),
     path('logout', views.logout_user, name='logout')
-
 ]
