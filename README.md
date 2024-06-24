@@ -79,3 +79,18 @@ python manage.py migrate
 python manage.py runserver
 ```
 Open your web browser and go to http://localhost:8000/
+
+## Few insights
+![Screenshot (195)](https://github.com/VGD3626/college_management_system/assets/120765596/dc5a0b9d-1706-41d6-b32f-6f62702c2457)
+![Screenshot (194)](https://github.com/VGD3626/college_management_system/assets/120765596/b5a29fe5-0fa5-44b8-9c29-e2ddecce67f9)
+![Screenshot (193)](https://github.com/VGD3626/college_management_system/assets/120765596/287a3193-fb09-4e25-8f18-7b5b56db1e8f)
+![Screenshot (192)](https://github.com/VGD3626/college_management_system/assets/120765596/6024f513-ee9c-4e12-ab18-9a5b78491610)
+![Screenshot (191)](https://github.com/VGD3626/college_management_system/assets/120765596/6df6bc43-981c-4cc7-9f9a-88ee3559a96a)
+![Screenshot (190)](https://github.com/VGD3626/college_management_system/assets/120765596/c8a2a60f-8e27-4940-b627-a2ef742edd81)
+![Screenshot (189)](https://github.com/VGD3626/college_management_system/assets/120765596/f9d6038c-1c8a-4e10-bbb7-d59e4488e564)
+![Screenshot (186)](https://github.com/VGD3626/college_management_system/assets/120765596/18f4e2eb-cb4a-4f31-8a51-b9e150e3cb77)
+![Screenshot (185)](https://github.com/VGD3626/college_management_system/assets/120765596/52a5afc9-b523-4673-93f6-51b83aec9339)
+![Screenshot (183)](https://github.com/VGD3626/college_management_system/assets/120765596/e249b4cc-10a6-4636-a713-2cbac33a6d22)
+![Screenshot (182)](https://github.com/VGD3626/college_management_system/assets/120765596/9d495c31-923f-4930-8929-bb746ed6d524)
+![Screenshot (181)](https://github.com/VGD3626/college_management_system/assets/120765596/af445d17-a127-453a-994b-15514c7611d7)
+![Screenshot (179)](https://github.com/VGD3626/college_management_system/assets/120765596/8153e13f-6036-407c-ba1f-3a4c3e04c118)
