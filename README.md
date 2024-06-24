@@ -1,6 +1,5 @@
 # College Management System: Streamlining Operations & Communication
 
-[⭐ Star this repo!]
 
 ## Overview
 
@@ -41,6 +40,42 @@ This project builds a web application using Django (back-end) and Bootstrap (fro
 
 ## Getting Started
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/yourusername/college-management-system.git
+Installation
+Clone the repository:
+```
+git clone https://github.com/your-username/college-management-system.git
+```
+Navigate to the project directory:
+```
+cd college-management-system
+```
+Create a virtual environment:
+```
+python -m venv env
+```
+Activate the virtual environment:
+On Windows:
+```
+.\env\Scripts\activate
+```
+On macOS and Linux:
+```
+source env/bin/activate
+```
+Install the required dependencies:
+```
+# Install Django
+pip install Django
+
+# Install Pillow
+pip install Pillow
+
+# Install ReportLab
+pip install reportlab
+```
+Apply the migrations and run the development server:
+```
+python manage.py migrate
+python manage.py runserver
+```
+Open your web browser and go to http://localhost:8000/
